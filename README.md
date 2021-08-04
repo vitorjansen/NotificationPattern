@@ -18,7 +18,7 @@
 
     Entenda esta classe como um gerenciador, ela apenas acumulará os erros e depois os retornará.
 
-    Então esta classe terá uma propriedade que guardará estes erros (uma lista) e dois métodos um para adionar mensagens nesta lista e outro para retornar esta lista quando solicitado.
+    Então esta classe terá uma propriedade que guardará estes erros (uma lista) e dois métodos um para adicionar mensagens nesta lista e outro para retornar esta lista quando solicitado.
 
     ```csharp
     public class Notificador
@@ -47,7 +47,7 @@
 
 4. Injeção de dependência
 
-    Podemos utilizar a nova classe através da injeção de depência. Em caso, de uma API é necessário adiconar ao escopo na classe `Startup`.
+    Podemos utilizar a nova classe através da injeção de depência. Em caso, de uma API é necessário adicionar ao escopo na classe `Startup`.
 
     ```csharp
         // Classe que irá utilizar o notificador
@@ -92,7 +92,7 @@
         }
     ```
 
-4. Retornando os erros (Controller em caso de API ou View em caso de aplicação web)
+4. Retornando os erros (Controller em caso de API)
 
     ```csharp
     if (!_usuarioService.Cadastrar(usuario))
